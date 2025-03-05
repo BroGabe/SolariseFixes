@@ -1,0 +1,7 @@
+name: SolariseFixes
+version: '${project.version}'
+depend:
+  - Factions
+  - Essentials
+  - FactionsKore
+main: com.thedev.solarisefixes.SolariseFixes
