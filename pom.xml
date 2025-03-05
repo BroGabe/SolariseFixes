@@ -85,12 +85,5 @@
           <scope>system</scope>
           <systemPath>${project.basedir}/Libs/EssentialsX.jar</systemPath>
       </dependency>
-      <dependency>
-          <groupId>com.koredev.kore</groupId>
-          <artifactId>FactionsKore</artifactId>
-          <version>1.0</version>
-          <scope>system</scope>
-          <systemPath>${project.basedir}/Libs/FKore.jar</systemPath>
-      </dependency>
   </dependencies>
 </project>

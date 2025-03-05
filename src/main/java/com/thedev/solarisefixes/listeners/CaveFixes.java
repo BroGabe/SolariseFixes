@@ -31,6 +31,10 @@ public class CaveFixes implements Listener {
         config.getStringList("caves-feature.allowed-break").forEach(s -> allowedTypes.add(s.toUpperCase()));
     }
 
+    /**
+     * Disallows breaking blocks in the cave world that are not whitelisted.
+     * @param event
+     */
     @EventHandler
     public void onBreak(BlockBreakEvent event) {
         if(event.getPlayer().hasPermission("solarise.admin")) return;
