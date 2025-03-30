@@ -71,6 +71,7 @@
           <version>1.8.8-R0.1-SNAPSHOT</version>
           <scope>provided</scope>
       </dependency>
+
       <dependency>
           <groupId>com.golfing8.factions</groupId>
           <artifactId>FactionsFork</artifactId>
@@ -79,11 +80,79 @@
           <systemPath>${project.basedir}/Libs/Factions.jar</systemPath>
       </dependency>
       <dependency>
+          <groupId>org.projectlombok</groupId>
+          <artifactId>lombok</artifactId>
+          <version>1.18.30</version> <!-- Use latest version -->
+          <scope>provided</scope>
+      </dependency>
+      <dependency>
+          <groupId>org.projectlombok</groupId>
+          <artifactId>lombok</artifactId>
+          <version>1.18.30</version>
+          <scope>compile</scope>
+      </dependency>
+      <dependency>
           <groupId>com.essx.dev</groupId>
           <artifactId>EssentialsX</artifactId>
           <version>1.0</version>
           <scope>system</scope>
           <systemPath>${project.basedir}/Libs/EssentialsX.jar</systemPath>
+      </dependency>
+      <dependency>
+          <groupId>com.manticswords.dev</groupId>
+          <artifactId>ManticSwords</artifactId>
+          <version>1.0</version>
+          <scope>system</scope>
+          <systemPath>${project.basedir}/Libs/ManticSwords.jar</systemPath>
+      </dependency>
+      <dependency>
+          <groupId>com.mantichoes.dev</groupId>
+          <artifactId>ManticHoes</artifactId>
+          <version>1.0</version>
+          <scope>system</scope>
+          <systemPath>${project.basedir}/Libs/ManticHoes.jar</systemPath>
+      </dependency>
+      <dependency>
+          <groupId>com.manticrods.dev</groupId>
+          <artifactId>ManticRods</artifactId>
+          <version>1.0</version>
+          <scope>system</scope>
+          <systemPath>${project.basedir}/Libs/ManticRods.jar</systemPath>
+      </dependency>
+      <dependency>
+          <groupId>com.manticlib.dev</groupId>
+          <artifactId>ManticLib</artifactId>
+          <version>1.0</version>
+          <scope>system</scope>
+          <systemPath>${project.basedir}/Libs/ManticLib-1.0.48.4 (1).jar</systemPath>
+      </dependency>
+      <dependency>
+          <groupId>com.fkore.dev</groupId>
+          <artifactId>FactionsKore</artifactId>
+          <version>1.0</version>
+          <scope>system</scope>
+          <systemPath>${project.basedir}/Libs/FactionsKore-1.3.67.7.jar</systemPath>
+      </dependency>
+      <dependency>
+          <groupId>com.fkore.dev</groupId>
+          <artifactId>KoreFTOP</artifactId>
+          <version>1.0</version>
+          <scope>system</scope>
+          <systemPath>${project.basedir}/Libs/KoreFTOP.jar</systemPath>
+      </dependency>
+      <dependency>
+          <groupId>com.combattag.dev</groupId>
+          <artifactId>CombatTagPlus</artifactId>
+          <version>1.0</version>
+          <scope>system</scope>
+          <systemPath>${project.basedir}/Libs/CombatTagPlus.jar</systemPath>
+      </dependency>
+      <dependency>
+          <groupId>com.winedev.dev</groupId>
+          <artifactId>WineSpigot</artifactId>
+          <version>1.0</version>
+          <scope>system</scope>
+          <systemPath>${project.basedir}/Libs/WineSpigot.jar</systemPath>
       </dependency>
   </dependencies>
 </project>

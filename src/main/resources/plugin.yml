@@ -1,7 +1,13 @@
 name: SolariseFixes
 version: '${project.version}'
+softdepend:
+  - ManticSwords
+  - ManticHoes
+  - ManticRods
+  - ManticLib
 depend:
   - Factions
   - Essentials
   - FactionsKore
+  - CombatTagPlus
 main: com.thedev.solarisefixes.SolariseFixes

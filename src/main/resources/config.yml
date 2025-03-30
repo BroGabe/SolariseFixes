@@ -5,10 +5,28 @@ disallow-enemy-tp: false # Whether players can teleport to enemy land.
 anti-bow-boosting: true # Disables bow boosting
 disable-enemy-home: true # Disallows homes in enemy land.
 admin-permission: 'solarise.admin' # Allows to bypass a lot of limitations.
+disable-apple-resistance: false # Whether to disable resistance from god apples.
+
+protection-nerf:
+  enabled: true
+  nerf-per-piece: 6.25
+
+sharpness-buff:
+  enabled: true
+  amount: 5 # The percentage increase in damage for sharpness.
+
+outpost-boost:
+  enabled: true
+  name: 'Guardian'
+  damage-boost: 5 # Boost damage in water
+  damage-reduction: 5 # Take less damage in water
+  eco-boost:
+    name: "Guardian"
+    amount: 5 # How much percentage should money be boosted [ManticRods, ManticSwords, ManticHoes]
 
 darkzone-feature:
   enabled: true # Whether this feature is enabled
-  world: Apocalypse # The name of the darkzone world
+  world: Darkzone # The name of the darkzone world
   deny-teleportation: true # Denies essentials & factions teleportation [/f home, /spawn, /f warp, /home, /warp, etc]
   message: '&4&lDARKZONE &cYou cannot do this command here!'
   allowed-cmds:
@@ -16,25 +34,39 @@ darkzone-feature:
     - '/f c f'
     - '/f c p'
     - '/helpop'
-
-caves-feature:
-  enabled: true # Whether the feature is enabled.
-  world: 'caves'
-  message: '&4&lCAVES &cYou cannot break this here!'
-  allowed-break:
-    - 'GOLD_ORE'
-    - 'COAL_ORE'
-    - 'COAL_BLOCK'
-    - 'GOLD_BLOCK'
-    - 'DIAMOND_BLOCK'
-    - 'DIAMOND_ORE'
-    - 'REDSTONE_ORE'
-    - 'REDSTONE_BLOCK'
-    - 'QUARTZ_ORE'
-    - 'QUARTZ_BLOCK'
-    - 'LAPIS_ORE'
-    - 'LAPIS_BLOCK'
-    - 'EMERALD_ORE'
-    - 'EMERALD_BLOCK'
-    - 'IRON_ORE'
-    - 'IRON_BLOCK'
+    - '/near'
+    - '/fish top'
+    - '/upgrade'
+    - '/f coords'
+    - '/feed'
+    - '/f map off'
+    - '/f list'
+    - '/koth'
+    - '/koth schedule'
+    - '/koth gui'
+    - '/f money withdraw'
+    - '/f who'
+    - '/f money bal'
+    - '/f money deposit'
+    - '/f money'
+    - '/f money w'
+    - '/eat'
+    - '/r'
+    - '/shards pay'
+    - '/bal'
+    - '/tell'
+    - '/f top'
+    - '/f money b'
+    - '/f money d'
+    - '/outpost'
+    - '/staff'
+    - '/v'
+    - '/sc'
+    - '/gmc'
+    - '/gms'
+    - '/ban'
+    - '/mute'
+    - '/freeze'
+    - '/giveaway join'
+    - '/poll'
+    - '/polls'
