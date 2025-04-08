@@ -1,12 +1,16 @@
 package com.thedev.solarisefixes.listeners;
 
-import com.golfing8.kore.integration.event.KFactionDisbandEvent;
+import com.golfing8.kore.event.PlayerPrinterEnterEvent;
+import com.golfing8.kore.event.PlayerPrinterExitEvent;
 import com.massivecraft.factions.FLocation;
 import com.massivecraft.factions.FPlayer;
 import com.massivecraft.factions.FPlayers;
 import com.massivecraft.factions.perms.Relation;
 import com.thedev.solarisefixes.SolariseFixes;
 import com.thedev.solarisefixes.utils.ColorUtil;
+import it.ytnoos.lpx.api.LPX;
+import it.ytnoos.lpx.api.LPXPlugin;
+import it.ytnoos.lpx.api.player.ProtocolPlayer;
 import net.ess3.api.events.UserTeleportHomeEvent;
 import org.bukkit.*;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -24,6 +28,8 @@ import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerTeleportEvent;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
+
+import java.util.Optional;
 
 public class MiscListeners implements Listener {
 
@@ -162,6 +168,7 @@ public class MiscListeners implements Listener {
 
         Player attacker = (Player) event.getDamager();
 
+
         for(PotionEffect effect : attacker.getActivePotionEffects()) {
             if(!effect.getType().getName().equalsIgnoreCase("INCREASE_DAMAGE")) continue;
             if(effect.getAmplifier() != 2) return;
@@ -169,4 +176,24 @@ public class MiscListeners implements Listener {
             event.setDamage(event.getDamage() * 0.90);
         }
     }
+
+//    @EventHandler
+//    public void onPrinter(PlayerPrinterEnterEvent event) {
+//        Optional<ProtocolPlayer> playerOptional = plugin.getLpxPlugin().getInjector().getPlayer(event.getPlayer());
+//
+//        if(!playerOptional.isPresent()) return;
+//
+//        playerOptional.get().getPrinterData().setPrinterMode(true, 0);
+//    }
+//
+//    @EventHandler
+//    public void onPrinter(PlayerPrinterExitEvent event) {
+//        if(event.getPlayer() == null) return;
+//
+//        Optional<ProtocolPlayer> playerOptional = plugin.getLpxPlugin().getInjector().getPlayer(event.getPlayer());
+//
+//        if(!playerOptional.isPresent()) return;
+//
+//        playerOptional.get().getPrinterData().setPrinterMode(false, 0);
+//    }
 }

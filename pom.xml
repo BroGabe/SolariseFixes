@@ -71,7 +71,6 @@
           <version>1.8.8-R0.1-SNAPSHOT</version>
           <scope>provided</scope>
       </dependency>
-
       <dependency>
           <groupId>com.golfing8.factions</groupId>
           <artifactId>FactionsFork</artifactId>
@@ -139,6 +138,13 @@
           <version>1.0</version>
           <scope>system</scope>
           <systemPath>${project.basedir}/Libs/KoreFTOP.jar</systemPath>
+      </dependency>
+      <dependency>
+          <groupId>com.lpx.dev</groupId>
+          <artifactId>LPX</artifactId>
+          <version>1.0</version>
+          <scope>system</scope>
+          <systemPath>${project.basedir}/Libs/LPX.jar</systemPath>
       </dependency>
       <dependency>
           <groupId>com.combattag.dev</groupId>

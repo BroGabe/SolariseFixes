@@ -5,6 +5,7 @@ softdepend:
   - ManticHoes
   - ManticRods
   - ManticLib
+  - LPX
 depend:
   - Factions
   - Essentials

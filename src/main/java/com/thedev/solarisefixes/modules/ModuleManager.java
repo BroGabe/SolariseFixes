@@ -14,9 +14,15 @@ public class ModuleManager {
 
     private final DebugModule debugModule;
 
+    private CombatManager combatManager;
+
+    private PrinterAbuseManager printerAbuseManager;
+
     public ModuleManager(SolariseFixes plugin) {
         maskManager = new MaskManager(plugin);
         debugModule = new DebugModule();
+        combatManager = new CombatManager(plugin);
+        printerAbuseManager = new PrinterAbuseManager(plugin);
     }
 
 }

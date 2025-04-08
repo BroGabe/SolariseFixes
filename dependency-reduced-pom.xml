@@ -113,6 +113,13 @@
       <systemPath>${project.basedir}/Libs/KoreFTOP.jar</systemPath>
     </dependency>
     <dependency>
+      <groupId>com.lpx.dev</groupId>
+      <artifactId>LPX</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/Libs/LPX.jar</systemPath>
+    </dependency>
+    <dependency>
       <groupId>com.combattag.dev</groupId>
       <artifactId>CombatTagPlus</artifactId>
       <version>1.0</version>

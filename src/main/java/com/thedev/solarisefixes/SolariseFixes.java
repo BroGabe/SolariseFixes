@@ -9,27 +9,25 @@ import com.thedev.solarisefixes.modules.maskmodule.abilities.AbilityManager;
 import com.thedev.solarisefixes.modules.maskmodule.listeners.ComboListener;
 import com.thedev.solarisefixes.modules.maskmodule.listeners.HydraListener;
 import com.thedev.solarisefixes.modules.maskmodule.listeners.SlayerListener;
+import it.ytnoos.lpx.api.LPX;
 import lombok.Getter;
 import net.minelink.ctplus.CombatTagPlus;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.util.UUID;
 
-
+@Getter
 public final class SolariseFixes extends JavaPlugin {
 
-    @Getter
     private AbilityManager abilityManager;
 
-    @Getter
     private ModuleManager moduleManager;
 
-    @Getter
     private MaskConfig maskConfig;
 
-    @Getter
     private CombatTagPlus combatTagPlus;
+
+    private LPX lpxPlugin;
 
     @Override
     public void onEnable() {
@@ -40,6 +38,7 @@ public final class SolariseFixes extends JavaPlugin {
 
         // Registering CombatTag
         registerCombatTag();
+        registerLPX();
 
         // Register the ability manager
         abilityManager = new AbilityManager(this);
@@ -77,6 +76,12 @@ public final class SolariseFixes extends JavaPlugin {
 
         combatTagPlus = (CombatTagPlus) Bukkit.getPluginManager().getPlugin("CombatTagPlus");
         System.out.println("[SolariseFixes] Loading CombatTagPlus Support");
+    }
+
+    private void registerLPX() {
+        if(Bukkit.getPluginManager().getPlugin("LPX") == null) return;
+        lpxPlugin = Bukkit.getServicesManager().getRegistration(LPX.class).getProvider();
+        System.out.println("[SolariseFixes] Loading LPX Support");
     }
 
 }
